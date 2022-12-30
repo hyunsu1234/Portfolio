@@ -1,0 +1,1682 @@
+@font-face {
+  /* 티웨이 항공체 */
+  font-family: 'twayair';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  /* 메인폰트 */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #E2E2E2;
+}
+
+
+li {
+  list-style: none;
+}
+
+/* 세컨드 폰트(작은 글씨) */
+p {
+  font-family: 'Merriweather', serif;
+}
+
+/*HEADER*/
+
+/* navbar */
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+header, .navbar-default {
+  background-color: #E2E2E2;
+}
+
+.navbar-default {
+  border-color: none ;
+  padding: 0.5% 0.5%;
+  width: 100%;
+}
+
+.navbar-fixed-top {
+  top: 15px;
+  border-width: 0%;
+  box-shadow: 0px 1px 12px #646464;
+}
+
+.container {
+  width: 90%;
+}
+#brand {
+  font-size: 16px;
+  height: 53px;
+}
+
+#brand, .navbar-default .navbar-nav>li>a, .arrow-down {
+  color: #735B5B;
+}
+
+/* navbar hover */
+.navbar-default .navbar-nav>li>a:hover, .container #brand:hover{
+  color: #D0CDCD;
+}
+
+.navbar-header a:after, header nav a:after  {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0%;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.navbar-header a:hover:after, header nav a:hover:after  {
+	width: 100%;
+	background: #B79F9F;
+}
+
+/* about 영역 */
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* about 상단 box */
+.header_bg_wrap .header_bg_boxtop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #735B5B;
+  width: 100%;
+  height: 281px;
+}
+
+.header_bg_wrap .header_bg_boxbottom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #735B5B;
+  width: 50%;
+  height: 431px;
+}
+
+/* 오늘보다 내일이 더 성장하는 프론트엔드개발자 */
+.font-container {
+  position: absolute;
+  top: 198px;
+  left: 10vw;
+  width: 52vw;
+  height: 400px;
+  font-family: 'twayair';
+  color: #B79F9F;
+}
+
+.font-container .font_wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.font-container .font_wrap .quote_left {
+  position: absolute;
+  top: -13px;
+  left: 0px;
+  opacity: 0;
+  transition: all 9s;
+  transition-delay: 1.5s;
+}
+
+.font-container .font_wrap .quote_left.on {
+  opacity: 1;
+}
+
+.font-container .font_wrap .quote_right {
+  position: absolute;
+  bottom: 223px;
+  right: -73px;
+  opacity: 0;
+  transition: all 9s;
+  transition-delay: 1.5s;
+}
+
+.font-container .font_wrap .quote_right.on {
+  opacity: 1;
+}
+
+.font-container .font_wrap .fonttext_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.font_wrap .fonttext_wrap .font_top h1, .font_middle h1, .font_bottom h1 {
+  font-size: 2.5vw;
+}
+
+.font_wrap .fonttext_wrap .font_top {
+  opacity: 0;
+  transform: translateX(-800px);
+  transition: all 2s;
+  position: absolute;
+  top: 0px;
+  left: 4vw;
+}
+
+.font_wrap .fonttext_wrap .font_top.on {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.font_wrap .fonttext_wrap .font_middle {
+  display: flex;
+  align-items: baseline;
+  opacity: 0;
+  transform: translateX(-800px);
+  transition: all 2s;
+  /* transition-delay: 1s; */
+  position: absolute;
+  top: -25px;
+  left: 25vw;
+}
+
+.font_wrap .fonttext_wrap .font_middle.on {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.font_wrap .fonttext_wrap .font_bottom {
+  opacity: 0;
+  transform: translateX(-800px);
+  transition: all 2s;
+  transition-delay: 2s;
+  position: absolute;
+  top: 127px;
+  left: 42vw;
+}
+
+.font_wrap .fonttext_wrap .font_bottom.on {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.font_wrap .fonttext_wrap .font_middle h1:nth-child(1){
+  font-size: 3vw;
+}
+
+.font_wrap .fonttext_wrap .font_middle h1:nth-child(2){
+  font-size: 3.3vw;
+}
+
+.font_wrap .fonttext_wrap .font_middle h1:nth-child(3){
+  font-size: 3.6vw;
+}
+
+.font_wrap .fonttext_wrap .font_middle h1:nth-child(4){
+  font-size: 3.9vw;
+}
+
+.fonttext_wrap .font_bottom h1 {
+  font-size: 3.6vw;
+}
+
+/* 자기소개 */
+.introduction {
+  position: absolute;
+  top: 503px;
+  left: 10vw;
+  color: #745B5B;
+  width: 630px;
+}
+
+.introduction .MOTTO .MOTTO_title {
+  font-size: 1.5vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+/* typography */
+.typography_wrap {
+  position: absolute;
+  top: -62px;
+  right: 10vw;
+  height: 26.6vw;
+}
+
+.typography {
+  opacity: 0;
+  transform: translateX(800px);
+  transition: all 2s;
+  transition-delay: 2s;
+  position: absolute;
+  top: 343px;
+  right: -1vw;
+  background-color: #B79F9F;
+  padding: 2vw;
+  box-shadow: 0px 3px 7px #8C857A;
+  z-index: 1;
+}
+
+.typography.on {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.typography .svg_wrap {
+  z-index: 2;
+}
+
+.typography svg {
+  width: 16vw;
+  height: auto;
+}
+
+/* SVG ARTISTA */
+
+/***************************************************
+ * Generated by SVG Artista on 10/7/2022, 5:34:33 PM
+ * MIT license (https://opensource.org/licenses/MIT)
+ * W. https://svgartista.net
+ **************************************************/
+
+svg .svg-elem-1 {
+  stroke-dashoffset: 263.8599853515625px;
+  stroke-dasharray: 263.8599853515625px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+}
+
+svg.active .svg-elem-1 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-2 {
+  stroke-dashoffset: 399.55999755859375px;
+  stroke-dasharray: 399.55999755859375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+}
+
+svg.active .svg-elem-2 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-3 {
+  stroke-dashoffset: 399.5399475097656px;
+  stroke-dasharray: 399.5399475097656px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+}
+
+svg.active .svg-elem-3 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-4 {
+  stroke-dashoffset: 449.5799865722656px;
+  stroke-dasharray: 449.5799865722656px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+}
+
+svg.active .svg-elem-4 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-5 {
+  stroke-dashoffset: 353.115478515625px;
+  stroke-dasharray: 353.115478515625px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+}
+
+svg.active .svg-elem-5 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-6 {
+  stroke-dashoffset: 446.3256530761719px;
+  stroke-dasharray: 446.3256530761719px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+}
+
+svg.active .svg-elem-6 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-7 {
+  stroke-dashoffset: 354.3055419921875px;
+  stroke-dasharray: 354.3055419921875px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s;
+}
+
+svg.active .svg-elem-7 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-8 {
+  stroke-dashoffset: 901.411376953125px;
+  stroke-dasharray: 901.411376953125px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s;
+}
+
+svg.active .svg-elem-8 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-9 {
+  stroke-dashoffset: 865.91796875px;
+  stroke-dasharray: 865.91796875px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s;
+}
+
+svg.active .svg-elem-9 {
+  stroke-dashoffset: 0;
+}
+
+.typography_line {
+  border: solid 3px #B79F9F;
+  position: absolute;
+  top: 307px;
+  right: 1vw;
+  width: 20vw;
+  height: 107%;
+  box-shadow: 0px 3px 7px #8C857A;
+  opacity: 0;
+  transition: all 9s;
+}
+
+.typography_line.on {
+  opacity: 1;
+}
+
+/* arrow down */
+.arrow-down {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 94vh;
+}
+
+.arrow-down a {
+  color: #735B5B;
+  position: relative;
+}
+
+.arrow-down a:hover {
+  transition: color 0.3s linear;
+  color: #D0CDCD;
+}
+
+.arrow-down a span {
+  position: absolute;
+  top: -30px;
+  left: -26px;
+  background-color: #B79F9F;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: ani2 infinite 3s;
+  opacity: 0.6;
+}
+
+
+@keyframes ani2 {
+  0%,50%,100%{
+    transform: translateY(12px);
+}20%,80%{
+    transform: translateY(0px);
+}
+}
+
+.arrow-down a span i {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+
+/*ASIDE(SKILL)*/
+
+aside {
+  /* background-color: #B79F9F; */
+  padding: 130px 0 60px 0;
+  width: 100%;
+  height: 100vh;
+}
+
+aside {
+  background: linear-gradient(180deg, rgb(226, 226, 226) 10%, rgb(183, 159, 159) 90%);
+}
+
+aside .container .row .skill-font {
+  margin-bottom: 120px;
+}
+
+aside .font-S {
+  display: inline-block;
+  font-weight: 1000;
+  font-size: 5rem;
+  color: #B79F9F;
+  text-shadow: 4px 3px 5px #8C8C8C;
+}
+
+aside h2 {
+  display: inline-block;
+  padding: 30px 0;
+  position: relative;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+aside h2 span {
+  color: #735B5B;
+  padding: 0 1px;
+  position: relative;
+  z-index: 1;
+}
+
+/* 스킬퍼센트 */
+.skill-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0% 5%;
+}
+
+.skill-wrap {
+  height: auto;
+  padding: 0;
+}
+
+.skill-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 2s;
+}
+
+.skill-left.on {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.skill-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 2s;
+}
+
+.skill-right.on {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.js-wrap, .js-wrap span {
+  border-radius: 8px;
+  height: 40px;
+}
+
+.js-wrap {
+  background-color: rgb(254, 254, 254);
+  width: 600px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.js-wrap span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #8C857A;
+}
+
+/* 60% */
+.js-wrap .js-percent, .react-percent, .node-percent, .github-percent{
+  padding-right: 360px;
+}
+
+/* 70% */
+.js-wrap .jQuery-percent, .Photoshop-percent {
+  padding-right: 420px;
+}
+
+/* 80% */
+.js-wrap .Illustrator-percent {
+  padding-right: 480px;
+}
+
+/* 90% */
+.js-wrap .HTML-percent, .CSS-percent{
+  padding-right: 540px;
+}
+
+.js-wrap span p {
+  display: inline-block;
+}
+
+.js-wrap span .js-text, .js-wrap span .percent {
+  top: 7px;
+}
+
+.js-wrap span .js-text {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #E2E2E2;
+}
+
+.js-wrap span .percent {
+  position: absolute;
+  left: 554px;
+  top: 8px;
+}
+
+/* Skill영역 arrow down */
+
+aside {
+  position: relative;
+}
+
+aside >.arrow-down {
+  position: absolute;
+  top:0;
+  left: 0;
+  margin-top: 94vh;
+}
+
+aside >.arrow-down a span {
+  background-color: #E0DACA;
+}
+
+/*MAIN(WORKS)*/
+
+main {
+  background-color: #E2E1DD;
+  padding: 130px 0 60px 0;
+  position: relative;
+}
+
+main .container {
+  padding-bottom: 300px;
+}
+
+main .container .main-font {
+  margin-bottom: 40px;
+}
+
+main .font-W {
+  display: inline-block;
+  font-weight: 1000;
+  font-size: 5rem;
+  color: #B79F9F;
+  text-shadow: 4px 3px 5px #8C8C8C;
+}
+
+main h2 {
+  display: inline-block;
+  padding: 30px 0;
+  position: relative;
+  font-weight: 700;
+}
+
+main h2 span {
+  color: #735B5B;
+  padding: 0 1px;
+  position: relative;
+  z-index: 1;
+}
+
+h2:before {
+  left: 0;
+}
+
+/* 작품 리스트 */
+
+.work {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px 0px;
+  padding: 0% 5%;
+  position: relative;
+}
+
+.caption{
+  border-radius: 39px;
+  width: 18%;
+  height: auto;
+  color: #605b54;
+  background-color: rgb(183, 159, 159);
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  padding: 7% 0%;
+}
+
+.caption.on{
+  opacity: 1;
+  transition: all 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.tesla_caption {
+  border-radius: 39px;
+  width: 18%;
+  height: auto;
+  color: #605b54;
+  background-color: rgb(183, 159, 159);
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  padding: 7% 0%;
+}
+
+.tesla_caption.on{
+  opacity: 1;
+  transition: all 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.caption >h1 {
+  color: #735B5B;
+}
+
+.work> a {
+  display: inline-block;
+  width: 75%;
+  height: auto;
+  z-index: 1;
+}
+
+.work img {
+  width: 100%;
+  height: auto;
+  box-shadow: 23px 22px 19px #8C857A;
+}
+
+/* 배경상자 */
+
+.work .work_left-box {
+  display: block;
+  background-color: #D1CFCD;
+  width: 20%;
+  height: 120%;
+  position: absolute;
+  top: 0px;
+  left: -111px;
+}
+
+.work .work_right-box, .tesla_work_left-box {
+  display: block;
+  background-color: #B79F9F;
+  width: 10%;
+  height: 40%;
+  position: absolute;
+  top: -100px;
+  right: 0px;
+}
+
+/* works영역 arrow down */
+
+.work >.arrow-down {
+  position: absolute;
+  top: 139%;
+  left: 0;
+  z-index: 1;
+  margin-top: 0;
+}
+
+.work >.arrow-down a {
+  width: 0;
+}
+
+/* site visit / more details 버튼*/
+
+.workbutton_wrap {
+  position: absolute;
+  top: 158%;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.work_button {
+  background-color: rgba(183, 159, 159, 0.6);
+  width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.work_button> a {
+  text-decoration: none;
+}
+
+.work_button p {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #735B5B;
+}
+
+.workbutton_wrap .site_visit {
+  margin-right: 20px;
+}
+
+.workbutton_wrap .more_details {
+  margin-left: 20px;
+}
+
+/* tesla 작품 */
+.tesla_work {
+  margin-top: 330px;
+  padding-top: 240px;
+}
+.tesla_work .tesla_img {
+  box-shadow: -23px 22px 19px #8C857A;
+}
+/* tesla 배경상자 */
+.tesla_work_left-box {
+  top: 129px;
+  left: 0px;
+  height: 28%;
+}
+.tesla_work_right-box {
+  display: block;
+  background-color: #D1CFCD;
+  width: 20%;
+  height: 85%;
+  position: absolute;
+  top: 240px;
+  right: -110px;
+}
+.work .tesla_arrow-down {
+  top: 128%;
+}
+.tesla_workbutton_wrap {
+  top: 139%;
+}
+
+/* 스와이프 겔러리 */
+
+/* 전체 풀 스크린 레이아웃 */
+.wrap {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	box-sizing: border-box;
+	background: #E2E1DD;
+  overflow: hidden;
+}
+
+/* 자동 재생 버튼 */
+.wrap .auto {
+	position: absolute;
+	bottom: 60px;
+	left: 60px;
+	z-index: 20;
+}
+.wrap .auto li {
+	float: left;
+	margin-right: 20px;
+	cursor: pointer;
+	color: #8C857A;
+	font-size: 20px;	
+	opacity: 0.9;
+	transition: all 0.5s;
+  list-style: none;
+}
+.wrap .auto li:hover {
+	opacity: 1;
+	transform: scale(1.4);
+}
+
+/* 기본 슬라이드 프레임 */
+.wrap .swiper-wrapper {
+	width: 100%;
+	height: 100%;
+}
+.wrap .swiper-wrapper .swiper-slide {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	top: 50%;
+	margin-top: -230px;
+}
+.wrap .swiper-wrapper .swiper-slide .inner {
+	width: 100%;
+	height: 100%;
+	background: #DADADA;
+	padding: 30px;
+	box-sizing: border-box;
+	opacity: 0.4;
+	transition: 1s;
+}
+.wrap .swiper-wrapper .swiper-slide-active .inner {
+	opacity: 1;
+	box-shadow: 0px 0px 50px #0000(255, 255, 255, 0.8);
+}
+.wrap .swiper-wrapper .swiper-slide .inner::before,
+.wrap .swiper-wrapper .swiper-slide .inner::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	background: #fff;
+}
+.wrap .swiper-wrapper .swiper-slide-prev .inner,
+.wrap .swiper-wrapper .swiper-slide-next .inner {
+	opacity: 0.7;
+}
+@keyframes ani {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	1% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
+.wrap .swiper-wrapper .swiper-slide-active .inner::before {
+	animation: ani 1s ease 1;
+}
+.wrap .swiper-wrapper .swiper-slide-active .inner::after {
+	animation: ani 1s ease 0.3s 1;
+}
+
+.wrap .swiper-wrapper .swiper-slide .inner .con {
+	position: relative;
+	z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wrap .swiper-wrapper .swiper-slide .inner .con a {
+  display: flex;
+  justify-content: center;
+}
+.wrap .swiper-wrapper .swiper-slide .inner .con img {
+	width: 50%;
+}
+.wrap .swiper-wrapper .swiper-slide .inner .con .oliveyoung_img {
+	width: 100%;
+  margin: 42px 0;
+}
+.wrap .swiper-wrapper .swiper-slide .inner .con h2 {
+	font-weight: normal;
+	font-size: 20px;
+	font-family: "Open Sans";
+	color: #8C857A;
+	margin-top: 24px;
+	margin-bottom: -5px;
+  width: 100%;
+  text-align: center;
+}
+.wrap .swiper-wrapper .swiper-slide .inner .con h2::after {
+	content: ""; 
+	display: block;
+	width: 30px;
+	height: 1px;
+	background-color: #8C857A;
+	margin-top: 15px;
+	transition: 1s 0.5s;
+}
+.wrap .swiper-wrapper .swiper-slide .inner .con .Hwaseong_title::after{
+  margin-left: 36px;
+}
+.wrap .swiper-wrapper .swiper-slide .inner .con .HarryPotter_title::after{
+  margin-left: 96px;
+}
+.wrap .swiper-wrapper .swiper-slide .inner .con .oliveyoung_title::after{
+  margin-left: 103px;
+}
+.wrap .swiper-wrapper .swiper-slide-active .inner .con h2::after {
+	width: 100px;
+}
+.wrap .swiper-wrapper .swiper-slide .inner .con p {
+	font-weight: normal;
+	font-size: 13px;
+	font-family: "Merriweather";
+	line-height: 1.3;
+	color: #8C857A;
+	letter-spacing: 1px;
+}
+
+/* 작품 팝업창 */
+
+/* 화성행궁 팝업창 */
+.work_popup {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 101;
+	width: 1074px;
+  height: auto;
+	background-color: #DADADA;
+  margin: 5% 22%;
+}
+
+.pop_title {
+  height: 40px;
+  background-color: #B79F9F;
+}
+
+.pop_title a {
+  padding-top: 10px;
+  padding-right: 28px;
+}
+
+.pop_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-left: 96px;
+  padding-right: 37px;
+  background-attachment: scroll;
+}
+
+.pop_contents {
+  position: relative;
+}
+
+.pop_contents .title_contents, .color_contents, .PROGRAM_contents {
+  padding-bottom: 50px;
+}
+
+.pop_contents .title_contents {
+  padding-top: 40px;
+  color: #735B5B;
+}
+
+.pop_contents .title_contents span {
+  position: absolute;
+  top: 39px;
+  left: -24px;
+  display: inline-block;
+  width: 8px;
+  height: 138px;
+  background-color: #735B5B;
+}
+
+.pop_contents .title_contents >h2{
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  padding: 0;
+}
+
+.pop_contents .title_contents >h2:nth-child(3){
+  margin: 17px 0px;
+}
+
+.pop_contents .color_contents h3, .pop_contents .PROGRAM_contents h3 , .pop_contents .EXPLANATION_contents h3, .pop_contents .CONCEPT_contents h3, .pop_contents .PROCESS_contents h3 {
+  color: #B79F9F;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.pop_contents .color_contents .color_wrap {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.pop_contents .color_contents .color_wrap .pop_color {
+  width: 25px;
+  height: 25px;
+  background-color: #e7989c;
+  border-radius: 50%;
+  margin-left: 13px;
+  margin-bottom: 2px;
+}
+
+.pop_contents .color_contents .color_wrap .pop_color2 {
+  background-color: #7ec3af;
+}
+
+.pop_contents .color_contents .color_wrap .pop_color3 {
+  background-color: #d8b49e;
+}
+
+.pop_contents .color_contents .color_wrap .pop_color4 {
+  background-color: #fcd0a5;
+}
+
+.pop_contents .color_contents .color_wrap .color_text {
+  color: #8C857A;
+  font-size: 12px;
+}
+
+.pop_contents .PROGRAM_contents p {
+  color: #8C857A;
+  margin: 0;
+}
+
+.pop_contents .EXPLANATION_contents p {
+  color: #8C857A;
+  margin: 0;
+}
+
+.pop_contents .CONCEPT_contents p {
+  color: #8C857A;
+  font-family: Gothic;
+  width: 266px;
+  margin: 0;
+}
+
+.pop_img img {
+  width: 550px;
+  height: auto;
+  background-color: #735B5B;
+  padding: 20px;
+}
+
+.transparent {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: auto;
+}
+
+/* 해리포터 팝업창 */
+.work_popup2 {
+	display: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+	z-index: 101;
+	width: 1074px;
+  height: auto;
+	background-color: #DADADA;
+  margin: 5% 22%;
+}
+
+.pop_contents .harrypotter_contents{
+  padding-bottom: 50px;
+}
+
+.pop_contents .harrypotter_title2{
+  padding-top: 40px;
+}
+
+.pop_contents .title_contents .harrypotter_span {
+  top: 31px;
+  left: -24px;
+  width: 8px;
+  height: 50px;
+}
+
+.pop_contents .color_contents h3,.PROGRAM_contents h3,.CONCEPT_contents h3 {
+  font-size: 22px;
+}
+
+.pop_contents .color_contents .color_wrap .harrypotter_color {
+  width: 25px;
+  height: 25px;
+  background-color: #283B38;
+  border-radius: 50%;
+  margin-left: 13px;
+  margin-bottom: 2px;
+}
+
+.pop_contents .color_contents .color_wrap .harrypotter_color2 {
+  background-color: #AF986B;
+}
+
+.pop_contents .color_contents .color_wrap .harrypotter_color3 {
+  background-color: #FFF454;
+}
+
+.PROCESS_contents h3 {
+  color: #B79F9F;
+}
+
+.work_popup2 .CONCEPT_contents {
+  padding-bottom: 40px;
+}
+
+.PROCESS_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.PROCESS_contents img {
+  width: 450px;
+  height: 450px;
+}
+
+.PROCESS_wrap div p {
+  color: #8C857A;
+    font-family: Gothic;
+    margin: 0;
+}
+
+/* 좌우 버튼  */
+.wrap .swiper-button-prev {
+	left: auto;
+	right: 100px; 
+	top: auto;
+	bottom: 50px; 
+  color: #8C857A;
+	transform: scale(0.5);
+}
+.wrap .swiper-button-next {
+	left: auto;
+	right: 60px; 
+	top: auto;
+	bottom: 50px; 
+  color: #8C857A;
+	transform: scale(0.5);
+}
+
+/* 페이지네이션 */
+.swiper-pagination-fraction {
+	bottom: auto;
+	top: 50px;
+	left: auto;
+	right: 50px;
+	width: auto;	
+	font-size: 16px;
+	font-family: "orbitron";
+	letter-spacing: 1px;
+	color: #8C857A; 	
+}
+.swiper-pagination-fraction span:nth-of-type(1) {
+	font-size: 30px; 
+	color: #8C857A;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #B79F9F;
+  color: #735B5B;
+}
+
+footer .social {
+  margin: 60px 88px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer h3 {
+  font-size: 36px;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+footer .contact_ulwrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer .container .contact_icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer .container .contact_icon li {
+  width: 100%;
+}
+
+footer .container .contact_icon .mail {
+  display: flex;
+  justify-content: left;
+  align-items:baseline;
+}
+
+footer .container .contact_icon .mail p {
+  display: inline-block;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+footer .container .contact_icon .tel {
+  display: flex;
+  justify-content: left;
+  align-items:baseline;
+}
+
+footer .container .contact_icon .tel p {
+  display: inline-block;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+footer .container .list-inline {
+  margin-left: 0;
+}
+
+footer a {
+  color: #E2E2E2;
+  transition: color 0.3s linear;
+}
+
+footer a:hover {
+  color: #735B5B;
+}
+
+footer h3, .container .contact_icon .mail, .container .list-inline li{
+  margin-bottom: 10px;
+}
+
+footer ul, footer small {
+  display: inline;
+}
+
+footer small {
+  margin: 0px 14px;
+  font-size: 14px;
+}
+
+footer small p {
+  margin: 0;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 1604px) {
+
+  /* MAIN(WORKS) */
+  .caption >h1, .tesla_caption>h1 {
+    font-size: 30px;
+  }
+  .caption >p, .tesla_caption>p {
+    font-size: 13px;
+  }
+  .work .work_right-box {
+    top: -92px;
+  }
+  .tesla_work_left-box{
+    top: 146px;
+    height: 27%;
+  }
+  .tesla_work_right-box {
+    right: -91px;
+    height: 80%;
+}
+}
+
+@media screen and (max-width: 1536px) {
+  /* 오늘보다 내일이 더 성장하는 개발자 */
+  .font-container {
+    top: 209px;
+    width: 52.5vw;
+}
+.font_wrap .fonttext_wrap .font_middle {
+  top: -20px;
+}
+.font_wrap .fonttext_wrap .font_bottom {
+  top: 131px;
+  left: 42.6vw;
+}
+.font-container .font_wrap .quote_left .fa-4x, .font-container .font_wrap .quote_right .fa-4x {
+  font-size: 3.5em;
+}
+.font-container .font_wrap .quote_right {
+  right: -63px;
+}
+/* 자기소개 */
+.introduction {
+  top: 448px;
+  width: 518px;
+}
+  /* 타이포그래피 */
+  .typography_line {
+    top: 312px;
+    right: 1vw;
+}
+}
+
+@media screen and (max-width: 1500px) {
+/* ASIDE(SKILL) */
+  .js-wrap {
+    width: 500px;
+}
+
+/* 60% */
+.js-wrap .js-percent, .react-percent, .node-percent, .github-percent{
+  padding-right: 300px;
+}
+
+/* 70% */
+.js-wrap .jQuery-percent, .Photoshop-percent {
+  padding-right: 350px;
+}
+
+/* 80% */
+.js-wrap .Illustrator-percent {
+  padding-right: 400px;
+}
+
+/* 90% */
+.js-wrap .HTML-percent, .CSS-percent{
+  padding-right: 450px;
+}
+
+.js-wrap span .percent {
+  left: 457px;
+}
+}
+
+@media screen and (max-width: 1344px) {
+  /* about */
+  .header_bg_wrap .header_bg_boxtop {
+    height: 314px;
+  }
+  .header_bg_wrap .header_bg_boxbottom {
+    height: 423px;
+}
+/* 오늘보다 내일이 더 성장하는 개발자 */
+  .font-container {
+    top: 247px;
+}
+.font_wrap .fonttext_wrap .font_middle {
+  top: -17px;
+}
+.font_wrap .fonttext_wrap .font_bottom {
+  top: 93px;
+}
+.font-container .font_wrap .quote_right {
+  bottom: 259px;
+  right: -57px;
+}
+  /* 자기소개 */
+  .introduction {
+    top: 464px;
+    width: 450px;
+  }
+  /* 타이포그래피 */
+  .typography_wrap {
+    top: -29px;
+  }
+  .typography_line {
+    top: 315px;
+    right: 1vw;
+}
+  .typography_line {
+    width: 20.3vw;
+  }
+  /* MAIN(WORKS) */
+  .caption >h1{
+    font-size: 24px;
+  }
+  .tesla_caption>h1 {
+    font-size: 26px;
+  }
+  .caption >p .tesla_caption>p{
+    font-size: 11px;
+  }
+  .work .work_left-box {
+    width: 23%;
+}
+  .work .work_right-box {
+  top: -70px;
+}
+.tesla_work_left-box {
+  top: 161px;
+  height: 25%;
+}
+.tesla_work_right-box {
+  right: -78px;
+  height: 75%;
+}
+
+}
+
+@media screen and (max-width: 1250px) {
+  
+/* ASIDE(SKILL) */
+
+  .js-wrap {
+    width: 400px;
+}
+
+/* 60% */
+.js-wrap .js-percent, .react-percent, .node-percent, .github-percent{
+  padding-right: 240px;
+}
+
+/* 70% */
+.js-wrap .jQuery-percent, .Photoshop-percent {
+  padding-right: 280px;
+}
+
+/* 80% */
+.js-wrap .Illustrator-percent {
+  padding-right: 320px;
+}
+
+/* 90% */
+.js-wrap .HTML-percent, .CSS-percent{
+  padding-right: 360px;
+}
+
+.js-wrap span .js-text {
+  top: 11px;
+  left: 8px;
+  font-size: 14px;
+}
+
+.js-wrap span .percent {
+  top: 11px;
+  left: 364px;
+  font-size: 14px;
+}
+
+}
+
+@media screen and (max-width: 1084px) {
+/* about */
+.header_bg_wrap .header_bg_boxtop {
+  height: 352px;
+}
+.header_bg_wrap .header_bg_boxbottom {
+  height: 435px;
+}
+/* 오늘보다 내일이 더 성장하는 개발자 */
+.font-container {
+  top: 292px;
+}
+.font-container .font_wrap .quote_left .fa-4x, .font-container .font_wrap .quote_right .fa-4x {
+  font-size: 3em;
+}
+.font_wrap .fonttext_wrap .font_middle {
+top: -14px;
+}
+.font_wrap .fonttext_wrap .font_bottom {
+top: 70px;
+}
+.font-container .font_wrap .quote_left {
+  top: -6px;
+}
+.font-container .font_wrap .quote_right {
+bottom: 288px;
+right: -49px;
+}
+/* 자기소개 */
+.introduction {
+  top: 466px;
+  width: 366px;
+}
+/* 타이포그래피 */
+.typography_wrap {
+  top: 9px;
+}
+.typography_line {
+  top: 319px;
+  height: 109%;
+}
+  /* MAIN(WORKS) */
+  .caption >h1{
+    font-size: 19px;
+  }
+  .tesla_caption>h1 {
+    font-size: 21px;
+  }
+  .caption >p, .tesla_caption>p {
+    font-size: 10px;
+  }
+  .work .work_left-box {
+    width: 25%;
+}
+  .work .work_right-box {
+  top: -57px;
+}
+  .tesla_work_left-box {
+    top: 185px;
+    height: 23%;
+}
+  .tesla_work_right-box {
+  right: -60px;
+  height: 68%;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  /* about */
+  .header_bg_wrap .header_bg_boxtop {
+    height: 360px;
+}
+.header_bg_wrap .header_bg_boxbottom {
+  height: 443px;
+}
+/* 오늘보다 내일이 더 성장하는 개발자 */
+.font-container {
+  top: 302px;
+}
+.font-container .font_wrap .quote_left .fa-4x, .font-container .font_wrap .quote_right .fa-4x {
+  font-size: 2.5em;
+}
+.font_wrap .fonttext_wrap .font_middle {
+top: -13px;
+}
+.font_wrap .fonttext_wrap .font_bottom {
+top: 70px;
+}
+.font-container .font_wrap .quote_left {
+  top: -6px;
+}
+.font-container .font_wrap .quote_right {
+bottom: 288px;
+right: -49px;
+}
+/* 자기소개 */
+.introduction {
+  top: 466px;
+  width: 366px;
+}
+/* 타이포그래피 */
+.typography_wrap {
+  top: 17px;
+}
+.typography_line {
+  top: 319px;
+  height: 109%;
+}
+
+  /* ASIDE(SKILL) */
+    .js-wrap {
+      width: 300px;
+  }
+
+  .js-wrap, .js-wrap span {
+    height: 35px;
+}
+  
+  /* 60% */
+  .js-wrap .js-percent, .react-percent, .node-percent, .github-percent{
+    padding-right: 180px;
+  }
+  
+  /* 70% */
+  .js-wrap .jQuery-percent, .Photoshop-percent {
+    padding-right: 210px;
+  }
+  
+  /* 80% */
+  .js-wrap .Illustrator-percent {
+    padding-right: 240px;
+  }
+  
+  /* 90% */
+  .js-wrap .HTML-percent, .CSS-percent{
+    padding-right: 262px;
+  }
+  
+  .js-wrap span .js-text {
+    top: 9px;
+    left: 8px;
+    font-size: 12px;
+  }
+  
+  .js-wrap span .percent {
+    top: 9px;
+    left: 266px;
+    font-size: 12px;
+  }
+  
+  }
+
+  @media screen and (max-width: 1000px) {
+
+    /* MAIN(WORKS) */
+    .work .work_left-box {
+      width: 26%;
+  }
+  .work .work_right-box {
+    top: -55px;
+  }
+  .tesla_work_left-box {
+    top: 184px;
+    height: 22%;
+}
+.tesla_work_right-box {
+  height: 66%;
+}
+  }
