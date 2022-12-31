@@ -238,6 +238,12 @@ header, .navbar-default {
   left: 10vw;
   color: #745B5B;
   width: 630px;
+  opacity: 0;
+  transition: all 9s;
+  transition-delay: 1.5s;
+}
+.introduction.on{
+  opacity: 1;
 }
 
 .introduction .MOTTO .MOTTO_title {

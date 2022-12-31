@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <!-- css 스타일 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- favicon 아이콘 -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="tesla_logo">
+                <a href="#"><img src="./img/logo.svg"></a>
+            </div>
+            <div class="menu">
+                <ul class="menu_ul">
+                    <li><a href="#">Cybertruck</a></li>
+                    <li><a href="#sec2">Model S</a></li>
+                    <li><a href="#sec3">Model 3</a></li>
+                    <li><a href="#sec4">Model X</a></li>
+                    <li><a href="#sec5">Model Y</a></li>
+                    <li><a href="#sec7">Powerwall</a></li>
+                </ul>
+            </div>
+            <div class="util_menu">
+                <ul>
+                    <li><a href="#sec6" id="shop">Shop</a></li>
+                    <li><a href="../teslajs/계정.html">계정</a></li>
+                    <li><a class="show-modal">메뉴</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal hidden">
+            <button class="close-modal"><img src="./img/close.svg"></button>
+            <ul>
+                <li><a href="#">신규 이벤토리</a></li>
+                <li><a href="#">인증중고 인벤토리</a></li>
+                <li><a href="#">보상 판매</a></li>
+                <li><a href="#"><span>Roadster</span></a></li>
+                <li><a href="#">충전</a></li>
+                <li><a href="#">상업용 에너지</a></li>
+                <li><a href="#">전력사업용 에너지</a></li>
+                <li><a href="#">에너지</a></li>
+                <li><a href="#">법인 판매</a></li>
+                <li><a href="#"><span>Tesla</span> 찾기</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">지원</a></li>
+                <li><a href="#">투자자 정보</a></li>
+                <li><a href="#">
+                        <span class="kr"><img src="./img/계정img/earth.png">대한민국</span>
+                        <p>한국어</p>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="overlay hidden"></div>
+    </header>
+    <section>
+        <div class="sec sec1">
+            <img src="./img/Cybertruck.svg">
+            <p class="trial"><a href="#">시승 신청</a></p>
+            <div class="button">
+                <div class="bt_left">
+                    <a href="#">주문하기</a>
+                </div>
+                <div class="bt_right">
+                    <a href="#">자세히 알아보기</a>
+                </div>
+            </div>
+            <div class="arrow_down">
+                <a href="#sec2">
+                    <img src="./img/down-arrow-56.svg">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sec sec2" id="sec2">
+            <h1>Model S</h1>
+            <p class="trial"><a href="#">시승 신청</a></p>
+            <div class="button">
+                <div class="bt_left">
+                    <a href="#">주문하기</a>
+                </div>
+                <div class="bt_right">
+                    <a href="#">자세히 알아보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sec sec3" id="sec3">
+            <h1>Model 3</h1>
+            <p class="trial"><a href="#">시승 신청</a></p>
+            <div class="button">
+                <div class="bt_left">
+                    <a href="#">주문하기</a>
+                </div>
+                <div class="bt_right">
+                    <a href="#">자세히 알아보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sec sec4" id="sec4">
+            <h1>Model X</h1>
+            <p class="trial"><a href="#">시승 신청</a></p>
+            <div class="button">
+                <div class="bt_left">
+                    <a href="#">주문하기</a>
+                </div>
+                <div class="bt_right">
+                    <a href="#">자세히 알아보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sec sec5" id="sec5">
+            <h1>Model Y</h1>
+            <p class="trial"><a href="#">시승 신청</a></p>
+            <div class="button">
+                <div class="bt_left">
+                    <a href="#">주문하기</a>
+                </div>
+                <div class="bt_right">
+                    <a href="#">자세히 알아보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sec sec6 slider" id="sec6">
+            <div class="button">
+                <div class="bt_left">
+                    <a href="#">주문하기</a>
+                </div>
+                <div class="bt_right">
+                    <a href="#">자세히 알아보기</a>
+                </div>
+            </div>
+            <div class="slide slide1">
+                <h1>Modal Y 액세서리</h1>
+                <img src="./img/Model Y 액세서리.avif">
+            </div>
+            <div class="slide slide2">
+                <h1>Modal X 액세서리</h1>
+                <img src="./img/Model X 액세서리.avif">
+            </div>
+            <button class="slider__btn slider__btn--left"></button>
+            <button class="slider__btn slider__btn--right"></button>
+        </div>
+    </section>
+    <section>
+        <div class="sec sec7" id="sec7">
+            <h1><span>태양광과</span> Powerwall</h1>
+            <p class="trial">모든 전력을 공급</p>
+            <div class="button">
+                <div class="bt_right">
+                    <a href="#">자세히 알아보기</a>
+                </div>
+            </div>
+            <div class="f_top">
+                <ul>
+                    <li><a href="#">Tesla @ 2022</a></li>
+                    <li><a href="#">개인정보 처리방침 및 법적고지</a></li>
+                    <li><a href="#">이용 약관</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">새 소식</a></li>
+                    <li><a href="#">위치</a></li>
+                </ul>
+            </div>
+            <div class="f_bottom">
+                <p>테슬라코리아 유한회사 | 사업자등록번호 : 524-88-00237 | 데이비드존파인스타인, 리리 | 통신판매업신고: 제2016-서울강남-02964호 |
+                    <a href="#">사업자정보확인</a> |
+                    호스팅제공자: Tesla Inc. | 주소 : 서울특별시 강남구 테헤란로 134, 14층 | 대표전화 : 080-617-1388 | <a
+                        href="#">southkorea@tesla.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

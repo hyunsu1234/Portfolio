@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla - Sign in</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/account.css">
+    <!-- favicon 아이콘 -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="tesla_logo">
+                <a href="../teslajs/main.html"><img src="./img/logo.svg"></a>
+            </div>
+            <button>
+                <img src="./img/계정img/earth.png">ko-KR
+            </button>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <h1>로그인</h1>
+            <div class="email-wrap">
+                <span>이메일</span>
+                <img src="./img/계정img/information+icon.svg">
+                <div class="hover_text">더 이상 이용하지 않는 이메일 주소와 계정이 연결되어 있는 경우, Tesla 계정에 로그인히여 계정 설정에서 이메일 주소를 업데이트하시기
+                    바랍니다</div>
+                <form>
+                    <input type="text" id="mail">
+                </form>
+            </div>
+            <input type="button" value="다음" class="next" onclick="getValueInText();">
+            <p><a>로그인하는데 문제가 있나요?</a></p>
+            <span class="line">또는</span>
+            <button class="create">계정 생성하기</button>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="#"><span>Tesla</span> @ <span>2022</span></a></li>
+            <li><a href="#">개인정보 처리방침 및 법적고지</a></li>
+            <li><a href="#">연락처</a></li>
+        </ul>
+    </footer>
+    <!-- JavaScript -->
+    <script src="./js/accountscript.js"></script>
+</body>
+
+</html>

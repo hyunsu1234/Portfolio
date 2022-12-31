@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    text-decoration: none;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #171a20;
+}
+
+/* header */
+header {
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    font-size: 14px;
+    z-index: 10;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 32px;
+}
+.tesla_logo img {
+    width: 120px;
+    height: 16px;
+    padding: 0 16px;
+}
+.menu_ul {
+    display: flex;
+    padding: 0px 8px;
+}
+.menu_ul li {
+    padding: 4px 8px;
+}
+.menu_ul li a{
+    margin: 0 8px;
+    font-family: "LINESeedKR-Bd", sans-serif;
+}
+.util_menu ul {
+    display: flex;
+    padding: 0;
+}
+.util_menu ul li {
+    padding: 4px 8px;
+}
+.util_menu ul li:nth-child(1){
+    font-family: "LINESeedKR-Bd", sans-serif;
+}
+.util_menu ul li a {
+    margin: 0 8px;
+}
+.show-modal {
+    cursor: pointer;
+}
+.modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    width: 311px;
+    height: 100vh;
+}
+.hidden {
+    display: none;
+}
+.close-modal {
+    width: 26px;
+    background-color: #fff;
+    border: none;
+    color: #171a20;
+    margin: 30px;
+    margin-left: 240px;
+    cursor: pointer;
+}
+.modal>ul {
+    margin: 0;
+}
+.modal>ul>li{
+    padding: 11px 4px;
+}
+.modal>ul>li>a>span>img {
+    width: 18px;
+    margin-right: 10px;
+}
+.modal>ul>li>a>span {
+    font-weight: 600;
+}
+.modal>ul>li>a .kr {
+    font-weight: normal;
+    display: flex;
+} 
+.modal>ul>li>a>p {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 29px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: -1;
+    }
+
+/* cybertruck */
+.sec{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/Cybertruck\(2880X1800\).jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.sec1>img {
+    width: 100%;
+    height: 106px;
+    margin-top: 16vh;
+}
+.sec .trial {
+    text-align: center;
+    margin: 0;
+    width: 100vw;
+    padding-top: 6px;
+}
+.sec .trial a {
+    font-size: 14px;
+    border-bottom: 1px solid black;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    width: 100vw;
+}
+.button .bt_left {
+    background-color: #171A20CC;
+    width: 264px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button .bt_left a {
+    color: aliceblue;
+    font-size: 14px;
+}
+.button .bt_right {
+    background-color: #F4F4F4A6;
+    width: 264px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+}
+.button .bt_right a {
+    color: #393C41;
+    font-size: 14px;
+}
+.arrow_down {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100vw;
+}
+.arrow_down img {
+    width: 30px;
+    animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(6px);}
+	60% {transform: translateY(3px);}
+}
+
+/* Model S */
+.sec2{
+    background-image: url(../img/Model\ S.jpg);
+}
+.sec h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #171a20;
+    padding-top: 15.3vh;
+    margin: 0;
+}
+
+/* Model 3 */
+.sec3{
+    background-image: url(../img/Model\ 3.jpg);
+}
+
+/* Model X */
+.sec4{
+    background-image: url(../img/Model\ X.jpg);
+}
+
+/* Model Y */
+.sec5{
+    background-image: url(../img/Model\ Y\(2880x2400\).jpg);
+}
+
+/* Shop */
+.sec6{
+    background-image: url(../img/Model\ Y\ 액세서리.avif);
+    background-image: none;
+}
+.slider {
+    margin: 0 auto;
+    position: relative;
+    overflow: visible;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide1 {
+    z-index: -1;
+}
+.slide1>h1 {
+    position: absolute;
+    top: 0;
+    left: 50;
+}
+.slide2 {
+    z-index: -2;
+}
+.slide2>h1 {
+    position: absolute;
+    top: 0;
+    left: 50;
+}
+.slide>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    font-size: 3.25rem;
+    cursor: pointer;
+    color: #333;
+    font-family: inherit;
+    background: none;
+    z-index: 0;
+}
+.slider__btn--left {
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+.slider__btn--left::before {
+    content: "";
+    display: inline-block;
+    border: solid black;
+    transform: rotate(-45deg);
+    border-width: 1px 0 0 1px;
+    padding: 24px;
+}
+.slider__btn--right {
+    right: 6%;
+    transform: translate(50%, -50%);
+}
+.slider__btn--right::after {
+    content: "";
+    display: inline-block;
+    border: solid black;
+    padding: 24px;
+    border-width: 1px 0 0 1px;
+    transform: rotate(135deg);
+}
+
+/* Powerwall */
+.sec7{
+    background-image: url(../img/Powerwall.jpg);
+}
+.sec7 h1 {
+    font-size: 34px;
+}
+.sec7 h1 span {
+    font-weight: normal;
+}
+.sec7 p {
+    font-size: 14px;
+}
+.sec7 .button {
+    bottom: 172px;
+}
+.sec7 .button .bt_right {
+    background-color: #171A20CC;
+    margin: 0;
+}
+.sec7 .button .bt_right a {
+    color: #fff;
+}
+/* footer */
+.f_top {
+    position: absolute;
+    bottom: 77px;
+    left: 0;
+    width: 100vw;
+}
+.f_top ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.f_top ul li {
+    margin-right: 14px;
+    padding: 8px 0;
+}
+.f_top ul li:nth-child(7) {
+    margin-right: 0;
+}
+.f_top ul li a {
+    font-size: 12px;
+    color: #D0D1D2;
+}
+.f_top ul li a:nth-child(1) {
+    font-weight: bold;
+}
+.f_bottom {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100vw;
+}
+.f_bottom p {
+    font-size: 10px;
+    color: #EEEEEE;
+    margin-top: 3px;
+    width: 558px;
+    text-align: center;
+    line-height: 20px;
+}
+.f_bottom p a {
+    color: #D0D1D2;
+    text-decoration: underline;
+}

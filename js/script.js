@@ -46,6 +46,7 @@ $(document).ready(function () {
           $(".typography").addClass("on");
           $(".container-box").addClass("on");
           $(".typography_line").addClass("on");
+          $(".introduction").addClass("on");
         } else if (t <= $('.skill-left').offset().top + 150) {
           $(".skill-left").addClass("on");
           $(".skill-right").addClass("on");
