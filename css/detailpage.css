@@ -661,6 +661,9 @@ section .number {
 .after_contents {
   top: -1vh;
 }
+.section3 .LH_wrap .LH_before .LH_before_title h1, .section3 .LH_wrap .LH_after .LH_after_title h1 {
+  top: -4vh;
+}
 }
 
 @media screen and (max-width: 1470px) {

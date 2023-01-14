@@ -477,20 +477,16 @@ main aside span {
 section .number {
   font-size: 14px;
 }
-
 .section1 article h2, .section2 article h2 {
   font-size: 36px;
 }
-
 .section1 .article1 .color_container .color_wrap span {
   width: 70px;
   height: 70px;
 }
-
 .section1 .article1 .color_container .color_margin {
   margin: 0px 70px;
 }
-
 .section1 .article2 img {
   width: 85px;
   height: auto;
