@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 * {
     margin: 0;
@@ -31,7 +30,7 @@ header .top .wrap {
     height: 60px;
 }
 .header .top .wrap .home {
-    background: url(../images/mb_ico_home.png);
+    background: url(../images/icon/mb_ico_home.png);
     background-repeat: no-repeat;
     position: absolute;
     text-indent: -9999px;
@@ -105,7 +104,7 @@ header .top .wrap .logo {
     position: absolute;
     right: 50px;
     top: 20px;
-    background: url(../images/mb_ico_srch.png);
+    background: url(../images/icon/mb_ico_srch.png);
     background-repeat: no-repeat;
     width: 22px;
     height: 22px;
@@ -133,7 +132,7 @@ header .top .wrap .logo {
     position: absolute;
     top: 142px;
     right: 0%;
-    background: url(../images/mb_icon_open.png);
+    background: url(../images/icon/mb_icon_open.png);
     width: 80px;
     height: 40px;
     background-repeat: no-repeat;
@@ -150,7 +149,7 @@ header .top .wrap .logo {
     cursor: pointer;
 }
 .btn_open.on{
-    background: url(../images/mb_icon_close.png);
+    background: url(../images/icon/mb_icon_close.png);
     background-repeat: no-repeat;
     background-size: 22px;
     background-color: #666;
@@ -249,7 +248,7 @@ header .top .wrap .logo {
     width: 100%;
 }
 .best_prd ul li .ico_arrow {
-    background: url(../images/ico_arrow_beige.png);
+    background: url(../images/icon/ico_arrow_beige.png);
     background-repeat: no-repeat;
     background-position: 64.5%;
     color: #998465;
@@ -281,7 +280,7 @@ header .top .wrap .logo {
 .quick .top_btn {
     width: 40px;
     height: 40px;
-    background: #666 url(../images/mb_ico_top.png) no-repeat 50%;
+    background: #666 url(../images/icon/mb_ico_top.png) no-repeat 50%;
     background-size: 16px;
     border-radius: 50%;
     overflow: hidden;
@@ -575,7 +574,7 @@ header .top .wrap {
 .quick .top_btn {
     width: 50px;
     height: 50px;
-    background: #666 url(../images/pc_ico_top.png) no-repeat 50%;
+    background: #666 url(../images/icon/pc_ico_top.png) no-repeat 50%;
     background-size: 16px;
     border-radius: 50%;
     overflow: hidden;

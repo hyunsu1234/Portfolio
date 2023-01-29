@@ -12,6 +12,7 @@ html, body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #E2E2E2;
+  height: 100vh;
 }
 
 li {
@@ -108,7 +109,7 @@ header, .navbar-default {
   right: 0;
   background-color: #735B5B;
   width: 55%;
-  height: 498px;
+  height: 495px;
 }
 
 /* 오늘보다 내일이 더 성장하는 프론트엔드개발자 */
@@ -146,7 +147,7 @@ header, .navbar-default {
 
 .font-container .font_wrap .quote_right {
   position: absolute;
-  bottom: 208px;
+  bottom: 201px;
   right: 0px;
   opacity: 0;
   transition: all 9s;
@@ -231,7 +232,7 @@ header, .navbar-default {
 /* 자기소개 */
 .introduction {
   position: absolute;
-  top: 493px;
+  top: 446px;
   left: 10vw;
   color: #745B5B;
   width: 549px;
@@ -245,7 +246,7 @@ header, .navbar-default {
 }
 
 .introduction .MOTTO .MOTTO_title {
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
@@ -1369,7 +1370,7 @@ footer small p {
     height: 284px;
   }
   .header_bg_wrap .header_bg_boxbottom {
-    height: 432px;
+    height: 404px;
     width: 54.3%;
   }
   .font-container {
@@ -1378,13 +1379,17 @@ footer small p {
 }
 .font-container .font_wrap .quote_right {
   right: -15px;
+  bottom: 231px;
 }
 .font-container .font_wrap .quote_left .fa-4x, .font-container .font_wrap .quote_right .fa-4x {
   font-size: 3.5em;
 }
+.font_wrap .fonttext_wrap .font_bottom {
+  top: 122px;
+}
 /* 자기소개 */
 .introduction {
-  top: 378px;
+  top: 332px;
   width: 438px;
   line-height: 55px;
 }
@@ -1445,40 +1450,27 @@ aside .container .row .skill-font {
 @media screen and (max-width: 1344px) {
   /* about */
   .header_bg_wrap .header_bg_boxtop {
-    height: 363px;
+    height: 266px;
   }
   .header_bg_wrap .header_bg_boxbottom {
-    height: 459px;
+    height: 389px;
     width: 54.8%;
-}
-/* 책임을 통해 성장하는 개발자 */
-  .font-container {
-    top: 275px;
-}
-.font_wrap .fonttext_wrap .font_bottom {
-  top: 93px;
-}
-.font-container .font_wrap .quote_right {
-  bottom: 259px;
-  right: -17px;
 }
   /* 자기소개 */
   .introduction {
-    top: 457px;
-    width: 450px;
-    line-height: 55px;
+    top: 331px;
+    width: 405px;
+    line-height: 38px;
   }
   /* 타이포그래피 */
   .typography_wrap {
-    top: -29px;
+    top: -150px;
   }
   .typography_line {
     top: 315px;
     right: 1vw;
-}
-  .typography_line {
     width: 20.3vw;
-  }
+}
   /* MAIN(WORKS) */
   .caption >h1{
     font-size: 24px;
@@ -1551,38 +1543,38 @@ aside .container .row .skill-font {
 @media screen and (max-width: 1084px) {
 /* about */
 .header_bg_wrap .header_bg_boxtop {
-  height: 388px;
+  height: 260px;
 }
 .header_bg_wrap .header_bg_boxbottom {
-  height: 458px;
+  height: 349px;
   width: 54%;
 }
 /* 책임을 통해 성장하는 개발자 */
 .font-container {
-  top: 316px;
+  top: 182px;
 }
 .font-container .font_wrap .quote_left .fa-4x, .font-container .font_wrap .quote_right .fa-4x {
   font-size: 3em;
 }
 .font_wrap .fonttext_wrap .font_bottom {
-top: 70px;
+top: 89px;
 }
 .font-container .font_wrap .quote_left {
   top: -6px;
 }
 .font-container .font_wrap .quote_right {
-bottom: 288px;
+bottom: 267px;
 right: -20px;
 }
 /* 자기소개 */
 .introduction {
-  top: 466px;
-  width: 366px;
+  top: 306px;
+  width: 305px;
   line-height: 41px;
 }
 /* 타이포그래피 */
 .typography_wrap {
-  top: 9px;
+  top: -119px;
 }
 .typography_line {
   top: 319px;
@@ -1617,14 +1609,14 @@ right: -20px;
 @media screen and (max-width: 1024px) {
   /* about */
   .header_bg_wrap .header_bg_boxtop {
-    height: 403px;
+    height: 287px;
   }
   .header_bg_wrap .header_bg_boxbottom {
-    height: 474px;
+    height: 357px;
   }
   /* 책임을 통해 성장하는 개발자 */
   .font-container {
-    top: 332px;
+    top: 212px;
   }
   .font-container .font_wrap .quote_left .fa-4x, .font-container .font_wrap .quote_right .fa-4x {
     font-size: 2.5em;
@@ -1641,12 +1633,13 @@ right: -20px;
   }
   /* 자기소개 */
   .introduction {
-    top: 466px;
+    top: 335px;
     width: 341px;
+    line-height: 30px;
   }
   /* 타이포그래피 */
   .typography_wrap {
-    top: 17px;
+    top: -106px;
   }
   .typography_line {
     top: 319px;
@@ -1697,7 +1690,6 @@ right: -20px;
   }
 
   @media screen and (max-width: 1000px) {
-
     /* MAIN(WORKS) */
     .work .work_left-box {
       width: 26%;
