@@ -1,4 +1,4 @@
-// $(document).ready(function () {
+$(document).ready(function () {
 
 //팝업창
 $(function () {
@@ -27,8 +27,9 @@ $(function () {
             }
             if (t <= $('.main_img').offset().top) {
                 $(".top").slideDown(400);
+                $(".L_H_R").addClass("on"); //로고 애니메이션
             }
-        }, 500);
+        }, 100);
     })
 });
 
@@ -38,4 +39,4 @@ $(function () {
         $('html, body').animate({ scrollTop: '0' }, 680);
     });
 })
-    // });
+    });
