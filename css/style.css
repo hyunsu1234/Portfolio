@@ -249,7 +249,7 @@ header nav a:hover:after {
   width: 549px;
   opacity: 0;
   transition: all 9s;
-  transition-delay: 1.5s;
+  transition-delay: 5s;
   line-height: 66px;
 }
 .introduction.on {
@@ -576,7 +576,7 @@ aside h2 span {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #8c857a;
+  background-color: rgba(140, 133, 122, 0.9);
 }
 
 /* 60% */

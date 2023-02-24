@@ -286,17 +286,6 @@ section .number {
   padding: 0px 22px;
 }
 
-.section2 article .sec2_content::before {
-  background-color: #8c857a;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  content: "";
-  display: inline-block;
-  margin-right: 6px;
-  margin-bottom: 3px;
-}
-
 .section2 .article4 {
   position: relative;
 }
