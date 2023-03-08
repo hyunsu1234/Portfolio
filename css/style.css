@@ -112,21 +112,12 @@ header nav a:hover:after {
   height: 349px;
 }
 
-.header_bg_wrap .header_bg_boxbottom {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #735b5b;
-  width: 55%;
-  height: 495px;
-}
-
-/* 오늘보다 내일이 더 성장하는 프론트엔드개발자 */
+/* 책임을 통해 성장하는 디자이너 */
 .font-container {
   position: absolute;
   top: 235px;
   left: 10vw;
-  width: 53vw;
+  width: 1075px;
   height: 400px;
   font-family: "twayair";
   color: #b79f9f;
@@ -161,6 +152,7 @@ header nav a:hover:after {
   opacity: 0;
   transition: all 9s;
   transition-delay: 1.5s;
+  z-index: 1;
 }
 
 .font-container .font_wrap .quote_right.on {
@@ -174,10 +166,19 @@ header nav a:hover:after {
   width: 100%;
 }
 
+.header_bg_boxbottom {
+  position: absolute;
+  top: 0;
+  right: -700px;
+  background-color: #735b5b;
+  width: 1125px;
+  height: 260px;
+}
+
 .font_wrap .fonttext_wrap .font_top h1,
 .font_middle h1,
 .font_bottom h1 {
-  font-size: 2.5vw;
+  font-size: 48px;
 }
 
 .font_wrap .fonttext_wrap .font_top {
@@ -186,7 +187,7 @@ header nav a:hover:after {
   transition: all 2s;
   position: absolute;
   top: 0px;
-  left: 4vw;
+  left: 76.8px;
   display: flex;
   align-items: baseline;
 }
@@ -205,7 +206,7 @@ header nav a:hover:after {
   /* transition-delay: 1s; */
   position: absolute;
   top: 0px;
-  left: 20vw;
+  left: 384px;
 }
 
 .font_wrap .fonttext_wrap .font_middle.on {
@@ -220,7 +221,7 @@ header nav a:hover:after {
   transition-delay: 2s;
   position: absolute;
   top: 146px;
-  left: 36vw;
+  left: 690px;
 }
 
 .font_wrap .fonttext_wrap .font_bottom.on {
@@ -229,15 +230,15 @@ header nav a:hover:after {
 }
 
 .fonttext_wrap .font_top h1:nth-child(1) {
-  font-size: 4vw;
+  font-size: 76.8px;
 }
 
 .font_wrap .fonttext_wrap .font_middle h1:nth-child(1) {
-  font-size: 4vw;
+  font-size: 76.8px;
 }
 
 .fonttext_wrap .font_bottom h1 {
-  font-size: 4vw;
+  font-size: 76.8px;
 }
 
 /* 자기소개 */
@@ -250,14 +251,14 @@ header nav a:hover:after {
   opacity: 0;
   transition: all 9s;
   transition-delay: 5s;
-  line-height: 66px;
+  line-height: 32px;
 }
 .introduction.on {
   opacity: 1;
 }
 
 .introduction .MOTTO .MOTTO_title {
-  font-size: 1.1vw;
+  font-size: 20px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
@@ -265,9 +266,9 @@ header nav a:hover:after {
 /* typography */
 .typography_wrap {
   position: absolute;
-  top: -62px;
-  right: 10vw;
-  height: 26.6vw;
+  top: -285px;
+  right: -447px;
+  height: 510px;
 }
 
 .typography {
@@ -279,7 +280,7 @@ header nav a:hover:after {
   top: 343px;
   right: -1vw;
   background-color: #b79f9f;
-  padding: 2vw;
+  padding: 37.6px;
   box-shadow: 0px 3px 7px #8c857a;
   z-index: 1;
 }
@@ -294,7 +295,7 @@ header nav a:hover:after {
 }
 
 .typography svg {
-  width: 16vw;
+  width: 302px;
   height: auto;
 }
 
@@ -419,7 +420,7 @@ svg.active .svg-elem-9 {
   position: absolute;
   top: 307px;
   right: 1vw;
-  width: 20vw;
+  width: 378px;
   height: 107%;
   box-shadow: 0px 3px 7px #8c857a;
   opacity: 0;
@@ -576,7 +577,7 @@ aside h2 span {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(140, 133, 122, 0.9);
+  background-color: #d1cfcd;
 }
 
 /* 60% */
@@ -617,7 +618,7 @@ aside h2 span {
   position: absolute;
   top: 8px;
   left: 8px;
-  color: #e2e2e2;
+  color: #333333;
 }
 
 .js-wrap span .percent {
@@ -1418,7 +1419,7 @@ footer small p {
 
 @media screen and (max-width: 1536px) {
   /* 책임을 통해 성장하는 개발자 */
-  .header_bg_wrap .header_bg_boxtop {
+  /* .header_bg_wrap .header_bg_boxtop {
     height: 284px;
   }
   .header_bg_wrap .header_bg_boxbottom {
@@ -1427,7 +1428,7 @@ footer small p {
   }
   .font-container {
     top: 177px;
-    width: 52.5vw;
+    width: 55.5vw;
   }
   .font-container .font_wrap .quote_right {
     right: -15px;
@@ -1439,21 +1440,21 @@ footer small p {
   }
   .font_wrap .fonttext_wrap .font_bottom {
     top: 122px;
-  }
+  } */
   /* 자기소개 */
-  .introduction {
+  /* .introduction {
     top: 332px;
-    width: 438px;
-    line-height: 55px;
-  }
+    width: 512px;
+    line-height: 32px;
+  } */
   /* 타이포그래피 */
-  .typography_wrap {
+  /* .typography_wrap {
     top: -133px;
   }
   .typography_line {
     top: 312px;
     right: 1vw;
-  }
+  } */
   /* skills */
   aside .container .row .skill-font {
     margin-bottom: 3vh;
@@ -1507,28 +1508,28 @@ footer small p {
 
 @media screen and (max-width: 1344px) {
   /* about */
-  .header_bg_wrap .header_bg_boxtop {
+  /* .header_bg_wrap .header_bg_boxtop {
     height: 266px;
   }
   .header_bg_wrap .header_bg_boxbottom {
     height: 389px;
     width: 54.8%;
-  }
+  } */
   /* 자기소개 */
-  .introduction {
+  /* .introduction {
     top: 331px;
     width: 405px;
-    line-height: 38px;
-  }
+    line-height: 32px;
+  } */
   /* 타이포그래피 */
-  .typography_wrap {
+  /* .typography_wrap {
     top: -150px;
   }
   .typography_line {
     top: 315px;
     right: 1vw;
     width: 20.3vw;
-  }
+  } */
   /* MAIN(WORKS) */
   .caption > h1 {
     font-size: 24px;
@@ -1602,15 +1603,15 @@ footer small p {
 
 @media screen and (max-width: 1084px) {
   /* about */
-  .header_bg_wrap .header_bg_boxtop {
+  /* .header_bg_wrap .header_bg_boxtop {
     height: 260px;
   }
   .header_bg_wrap .header_bg_boxbottom {
     height: 349px;
     width: 54%;
-  }
+  } */
   /* 책임을 통해 성장하는 개발자 */
-  .font-container {
+  /* .font-container {
     top: 182px;
   }
   .font-container .font_wrap .quote_left .fa-4x,
@@ -1626,21 +1627,24 @@ footer small p {
   .font-container .font_wrap .quote_right {
     bottom: 267px;
     right: -20px;
-  }
+  } */
   /* 자기소개 */
-  .introduction {
+  /* .introduction {
     top: 306px;
     width: 305px;
-    line-height: 41px;
+    line-height: 32px;
   }
+  .introduction .MOTTO .MOTTO_title {
+    font-size: 14px;
+  } */
   /* 타이포그래피 */
-  .typography_wrap {
+  /* .typography_wrap {
     top: -119px;
   }
   .typography_line {
     top: 319px;
     height: 109%;
-  }
+  } */
   /* MAIN(WORKS) */
   .caption > h1 {
     font-size: 19px;
@@ -1670,14 +1674,14 @@ footer small p {
 
 @media screen and (max-width: 1024px) {
   /* about */
-  .header_bg_wrap .header_bg_boxtop {
+  /* .header_bg_wrap .header_bg_boxtop {
     height: 287px;
   }
   .header_bg_wrap .header_bg_boxbottom {
     height: 357px;
-  }
+  } */
   /* 책임을 통해 성장하는 개발자 */
-  .font-container {
+  /* .font-container {
     top: 212px;
   }
   .font-container .font_wrap .quote_left .fa-4x,
@@ -1693,21 +1697,21 @@ footer small p {
   .font-container .font_wrap .quote_right {
     bottom: 288px;
     right: -23px;
-  }
+  } */
   /* 자기소개 */
-  .introduction {
+  /* .introduction {
     top: 335px;
     width: 341px;
     line-height: 30px;
-  }
+  } */
   /* 타이포그래피 */
-  .typography_wrap {
+  /* .typography_wrap {
     top: -106px;
   }
   .typography_line {
     top: 319px;
     height: 109%;
-  }
+  } */
 
   /* ASIDE(SKILL) */
   .js-wrap {
