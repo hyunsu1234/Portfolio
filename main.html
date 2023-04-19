@@ -31,48 +31,26 @@
         </div>
         <nav>
           <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myCollapsible">
-            <li><a href="#welcome">ABOUT</a></li>
+            <li><a href="#about">ABOUT</a></li>
             <li><a href="#skill">SKILL</a></li>
             <li><a href="#works">WORKS</a></li>
           </ul>
         </nav>
       </div>
     </div>
-    <!-- about영역 -->
+    <!-- home영역 -->
     <div class="container-fluid welcome" id="welcome">
-      <!-- about 상단 box -->
-      <div class="header_bg_wrap">
-        <span class="header_bg_boxtop"></span>
+      <!-- Main 텍스트 -->
+      <div class="main_text">
+        <h1 class="portflio">PORTFLIO</h1>
+        <H4 class="name">HYUN SU LEE</H4>
       </div>
-      <!-- 책임을 통해 성장하는 디자이너 -->
-      <div class="font-container">
-        <div class="font_wrap">
-          <div class="quote_left">
-            <i class="fa-solid fa-quote-left fa-4x"></i>
-          </div>
-          <div class="quote_right">
-            <i class="fa-solid fa-quote-right fa-4x"></i>
-          </div>
-          <div class="fonttext_wrap">
-            <span class="header_bg_boxbottom"></span>
-            <div class="font_top">
-              <h1>책임</h1>
-              <h1>을 통해</h1>
-            </div>
-            <div class="font_middle">
-              <h1>성장</h1>
-              <h1>하는</h1>
-            </div>
-            <div class="font_bottom">
-              <h1>디자이너</h1>
-            </div>
-          </div>
-                <!-- 타이포그래피 -->
+      <!-- 타이포그래피 -->
       <div class="typography_wrap">
         <div class="typography">
           <!-- SVG ARTISTA -->
           <!--?xml version="1.0" encoding="UTF-8"?-->
-          <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.04 287.25"
+          <!-- <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.04 287.25"
             width="189.0399932861328" height="287.25">
             <defs>
               <style>
@@ -111,34 +89,44 @@
                 d="M137.02,264.42c-2.26,22.98-24.86,19.66-24.86,19.66H24.33c-23.66-1.92-23.83-23.62-23.83-23.62H16.5c.56,9.96,7.83,12.72,7.83,12.72H112.16c9.66-.93,9.11-9.78,9.11-9.78,.77-14.9-16.77-13.54-16.77-13.54H24.33c-20.76,0-21.1-21.95-21.1-21.95,.17-18.22,21.1-19.75,21.1-19.75H112.16c25.54,1.19,24.86,22.13,24.86,22.13h-15.83c0-11.24-9.03-11.24-9.03-11.24H24.33s-7.83,.18-7.83,9.96,13.28,9.96,13.28,9.96H104.5c35.83,4.04,32.52,25.45,32.52,25.45Z">
               </path>
             </g>
-          </svg>
-        </div>
-        <span class="typography_line"></span>
-      </div>
+          </svg> -->
         </div>
       </div>
-      <!-- 자기소개 -->
-      <div class="introduction">
-        <div class="MOTTO">
-          <p class="MOTTO_title">안녕하세요! 공대생 웹디자이너 이현수입니다.<br><br>
-            대학교 당시 졸업작품으로 시각장애인을 위한 청계천 <br>음성안내서비스를 제작해 보면서 기획과 UI를 디자인하는 것에<br> 관심을 가지게 되었습니다.
-            <br><br>
-            편집디자인 회사에 영업직으로 1년간 일을 하면서 고객과 <br>디자이너, 디자이너와 인쇄공장에 기술자들과 소통하는 법을 <br>배웠습니다.
-            <br><br>
-            이러한 저의 다양한 경험과 학원에서 배운 디자인&퍼블리싱 <br>기술을 가지고 성장하는 디자이너가 되겠습니다.</p>
         </div>
       </div>
       <!-- arrow-down -->
       <div class="arrow-down text-center about_arrow-down">
-        <a href="#skill">
+        <a href="#about">
           <span><i class="fa fa-angle-down fa-2x"></i></span>
         </a>
       </div>
     </div>
   </header>
 
+  <!-- about 영역 -->
+  <aside class="about" id="about">
+      <div class="semicolon_left">
+        <h3>세미콜론</h3>
+        <h4>앞 절과 뒤 절을 연결할 때 쓰는 문장부호로<br> 
+          세미클론이 있으면 문장은 끝나지 않습니다;</h4>
+      </div>
+      <div class="semicolon_right">
+        <h4>어려움을 극복하고 세미클론 처럼 포기하지 <br>
+          않는 디자이너가 되겠습니다.</h4>
+      </div>
+      <div class="semi_img">
+        <img src="./img/세미클론.svg">
+      </div>
+    <!-- arrow-down -->
+    <div class="arrow-down text-center about_arrow-down">
+      <a href="#skill">
+        <span><i class="fa fa-angle-down fa-2x"></i></span>
+      </a>
+    </div>
+  </aside>
+
   <!--ASIDE(SKILL)-->
-  <aside class="about" id="skill">
+  <aside class="about2" id="skill">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 description">
@@ -219,7 +207,6 @@
   </aside>
 
   <!--MAIN(WORKS)-->
-
   <main role="main" id="works">
     <div class="container">
       <div class="main-font">
@@ -230,7 +217,7 @@
       <section>
         <div class="work">
           <div class="caption">
-            <h1>Work Title: LOTTE HOTEL</h1>
+            <h1>Work Title: <span>LOTTE HOTEL</span></h1>
             <p>duration: 7days</p>
           </div>
           <!-- 롯데호텔로 경로이동 -->
@@ -249,13 +236,11 @@
           <!-- site visit / more details 버튼 -->
           <div class="workbutton_wrap">
             <div class="work_button site_visit">
-              <p class="click">click!</p>
               <a href="./LOTTE HOTEL(jQuery)/롯데호텔(jQ).html" target="_blank">
                 <p>SITE VISIT</p>
               </a>
             </div>
             <div class="work_button more_details">
-              <p class="click">click!</p>
               <a href="./detailpage.html" target="_blank">
                 <p>MORE DETAILS</p>
               </a>
@@ -271,7 +256,7 @@
             <img class="tesla_img" src="./img/tesla work img.png">
           </a>
           <div class="tesla_caption">
-            <h1>Work Title: Tesla</h1>
+            <h1>Work Title: <span>Tesla</span></h1>
             <p>duration: 5days</p>
           </div>
           <!-- tesla 배경상자 -->
@@ -290,13 +275,11 @@
     <!-- site visit / more details 버튼 -->
     <div class="workbutton_wrap tesla_workbutton_wrap">
       <div class="work_button site_visit">
-        <p class="click">click!</p>
         <a href="./teslajs/main.html" target="_blank">
           <p>SITE VISIT</p>
         </a>
       </div>
       <div class="work_button more_details">
-        <p class="click">click!</p>
         <a href="./tesladetailpage.html" target="_blank">
           <p>MORE DETAILS</p>
         </a>
@@ -458,7 +441,7 @@
       <div class="swiper-button-prev"></div>
 
       <!-- 페이징 버튼 -->
-      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-pagination"></div> -->
 
     </div>
   </main>

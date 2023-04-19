@@ -38,15 +38,7 @@ $(document).ready(function () {
         console.log(h);
 
         if (t <= $('.welcome').offset().top + 150) {
-          $(".font_top").addClass("on");
-          $(".font_middle").addClass("on");
-          $(".font_bottom").addClass("on");
-          $(".quote_left").addClass("on");
-          $(".quote_right").addClass("on");
           $(".typography").addClass("on");
-          $(".container-box").addClass("on");
-          $(".typography_line").addClass("on");
-          $(".introduction").addClass("on");
         } else if (t <= $('.skill-left').offset().top + 150) {
           $(".skill-left").addClass("on");
           $(".skill-right").addClass("on");

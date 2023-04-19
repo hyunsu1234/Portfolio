@@ -4,7 +4,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #b79f9f;
+  background-color: #0d2e3f;
 }
 
 body,
@@ -33,7 +33,7 @@ li {
 /* 세컨드 폰트(작은 글씨) */
 p {
   font-family: "Gothic";
-  color: #735b5b;
+  color: #8c857a;
 }
 
 /*HEADER*/
@@ -44,11 +44,11 @@ header {
 }
 
 .navbar-default {
-  background-color: #e2e2e2;
+  background-color: #0d2e3f;
 }
 
 .navbar-default {
-  border-color: none;
+  border-color: #0d2e3f;
   padding: 0.5% 0.5%;
   width: 100%;
 }
@@ -66,7 +66,7 @@ header {
 #brand,
 .navbar-default .navbar-nav > li > a,
 .arrow-down {
-  color: #735b5b;
+  color: #f19892;
   font-size: 16px;
 }
 
@@ -106,7 +106,7 @@ main article {
 }
 
 main article h1 {
-  color: #e0daca;
+  color: #f19892;
   font-weight: bold;
   padding-bottom: 10px;
   font-size: 40px;
@@ -120,7 +120,7 @@ main article div p {
 }
 
 main article div p:nth-child(3) {
-  background-color: #e2e2e2;
+  background-color: #0a4966;
   width: 152px;
   height: 32px;
   border-radius: 17px;
@@ -133,7 +133,7 @@ main article div p:nth-child(3) {
 
 main article div p:nth-child(3) a {
   text-decoration: none;
-  color: #735b5b;
+  color: #f19892;
 }
 
 main aside {
@@ -144,12 +144,12 @@ main aside {
 main aside img {
   width: 850px;
   height: auto;
-  box-shadow: 8px 2px 10px 3px #564646, 0px 0px 0px #735b5b;
+  box-shadow: 8px 2px 10px 3px #8b8b8b, 0px 0px 0px #735b5b;
   margin-right: -4px;
 }
 
 main aside span {
-  background-color: #8c857a;
+  background-color: #0a4966;
   position: absolute;
   top: 341px;
   left: 378px;
@@ -157,7 +157,6 @@ main aside span {
   width: 541px;
   height: 151px;
   z-index: -1;
-  box-shadow: 1px 2px 3px #8c857a;
 }
 
 /* SECTION */
@@ -167,7 +166,7 @@ section p {
 }
 
 section h2 {
-  color: #e0daca;
+  color: #5a6585;
   text-transform: lowercase;
   font-size: 38px;
 }
@@ -205,7 +204,7 @@ section .number {
 
 .section1 .article1 .art_line1 {
   display: block;
-  background-color: #e0daca;
+  background-color: #5a6585;
   width: 185px;
   height: 3px;
   position: absolute;
@@ -215,7 +214,7 @@ section .number {
 
 .section1 .article1 .art_line2 {
   display: block;
-  background-color: #e0daca;
+  background-color: #5a6585;
   width: 185px;
   height: 3px;
   position: absolute;
@@ -299,7 +298,7 @@ section .number {
 
 .section2 .art_line1 {
   display: block;
-  background-color: #e0daca;
+  background-color: #5a6585;
   width: 185px;
   height: 3px;
   position: absolute;
@@ -309,7 +308,7 @@ section .number {
 
 .section2 .art_line2 {
   display: block;
-  background-color: #e0daca;
+  background-color: #5a6585;
   width: 185px;
   height: 3px;
   position: absolute;
@@ -337,7 +336,7 @@ section .number {
 .em img {
   width: 680px;
   height: 408px;
-  border: 3px solid #e0daca;
+  border: 3px solid #5a6585;
   object-fit: cover;
 }
 .em > p {
@@ -348,7 +347,7 @@ section .number {
   content: "";
   width: 3px;
   height: 73px;
-  background-color: #e0daca;
+  background-color: #5a6585;
   display: inline-block;
   position: absolute;
   margin-left: -20px;
@@ -357,8 +356,8 @@ section .number {
 /*FOOTER*/
 
 footer {
-  background-color: #e2e2e2;
-  color: #735b5b;
+  background-color: #0a4966;
+  color: #8c857a;
 }
 
 footer .social {
@@ -423,12 +422,12 @@ footer .container .list-inline {
 }
 
 footer a {
-  color: #735b5b;
+  color: #0d2e3f;
   transition: color 0.3s linear;
 }
 
 footer a:hover {
-  color: #b79f9f;
+  color: #f19892;
 }
 
 footer h3,
