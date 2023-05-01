@@ -4,7 +4,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #0d2e3f;
+  background-color: #0b2836;
+  background-image: url("../img/noise.png");
 }
 
 body,
@@ -44,11 +45,12 @@ header {
 }
 
 .navbar-default {
-  background-color: #0d2e3f;
+  background-color: #0b2836;
+  background-image: url("../img/noise.png");
 }
 
 .navbar-default {
-  border-color: #0d2e3f;
+  border-color: #0b2836;
   padding: 0.5% 0.5%;
   width: 100%;
 }
@@ -56,7 +58,7 @@ header {
 .navbar-fixed-top {
   top: 15px;
   border-width: 0%;
-  box-shadow: 0px 1px 12px #646464;
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 30%);
 }
 
 .container {
@@ -143,12 +145,12 @@ main aside {
 main aside img {
   width: 850px;
   height: auto;
-  box-shadow: 8px 2px 10px 3px #564646, 0px 0px 0px #735b5b;
+  box-shadow: 8px 2px 10px 3px #081e29, 0px 0px 0px #081e29;
   margin-right: -4px;
 }
 
 main aside span {
-  background-color: #0a4966;
+  background-color: rgba(10, 73, 102, 0.3);
   position: absolute;
   top: 341px;
   left: 378px;
@@ -167,13 +169,7 @@ section p {
 
 section h2 {
   color: #5a6585;
-  text-transform: lowercase;
   font-size: 38px;
-}
-
-section .number {
-  font-size: 16px;
-  margin: 0;
 }
 
 /* section1 */
@@ -225,7 +221,7 @@ section .number {
 
 .section1 article h2,
 .section2 article h2 {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   margin-top: 0;
   font-size: 38px;
 }
@@ -257,6 +253,8 @@ section .number {
 
 .section1 .article1 .color_container .color_wrap > p {
   font-size: 14px;
+  margin-top: 10px;
+  letter-spacing: 1px;
 }
 
 .section1 .article2 img {
@@ -327,7 +325,7 @@ section .number {
 }
 
 .section3_box {
-  background-color: #0a4966;
+  background-color: rgba(10, 73, 102, 0.4);
   display: block;
   width: 120px;
   height: 10%;
@@ -358,11 +356,11 @@ section .number {
 .section3 .LH_wrap .LH_before .LH_before_title h1,
 .section3 .LH_wrap .LH_after .LH_after_title h1 {
   text-align: center;
-  background-color: #d9d9d9;
+  background-color: #5a6585;
   width: 12vw;
   border-radius: 17px;
   font-weight: 600;
-  color: #b79f9f;
+  color: #f19892;
   z-index: 1;
   font-size: 1.5vw;
   position: absolute;
@@ -503,7 +501,7 @@ section .number {
 /*FOOTER*/
 
 footer {
-  background-color: #0a4966;
+  background-color: #0d2e3f;
   color: #8c857a;
 }
 
@@ -569,7 +567,7 @@ footer .container .list-inline {
 }
 
 footer a {
-  color: #0d2e3f;
+  color: #8c857a;
   transition: color 0.3s linear;
 }
 
